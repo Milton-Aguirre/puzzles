@@ -178,7 +178,7 @@ def animar_movimento(tela, tabuleiro, direcao, fonte, som_clique):
 
 def exibir_vitoria(tela, fonte):
     tela.fill(BRANCO)
-    texto = fonte.render("VOCÊ VENCEU!", True, VERDE)
+    texto = fonte.render("VOCÊ VENCEU!", True, CINZA)
     tela.blit(texto, texto.get_rect(center=(TAMANHO // 2, TAMANHO // 2)))
     pygame.display.update()
     pygame.time.delay(3000)
